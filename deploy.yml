@@ -8,12 +8,6 @@ spec:
   selector:
     matchLabels:
       project: qsk-book
-  minReadySeconds: 20
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 0
   template:
     metadata:
       labels:
@@ -24,5 +18,5 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
-        image: nigelpoulton/qsk-book:1.1
+        image: nigelpoulton/qsk-book:1.0
 
