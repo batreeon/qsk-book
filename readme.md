@@ -32,7 +32,8 @@ I'm passionate about tech, and I'm all about making Kubernetes less scary!
 - LinkedIn: [Nigel Poulton](https://www.linkedin.com/in/nigelpoulton/)
 
 
-使用k3d创建集群：
+## 使用k3d创建k3s集群
+
 k3d cluster create mycluster --servers 1 --agents 2 --port 31111:31111@loadbalancer
 
 kubectl apply -f pod.yml
